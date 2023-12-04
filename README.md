@@ -5,7 +5,7 @@ This project aims to provide an application for managing events, including regis
 Event organizers can create, update, and delete event information.
 git
 
-### User Classes and Characteristics:
+## User Classes and Characteristics:
 
 The system caters to distinct user roles – Organizers and Attendees. Organizers, as central administrators, wield comprehensive privileges for effective event management. Attendees, participants in events, access a user-friendly interface for seamless registration and participation. This ensures a streamlined and personalized experience for both within the Event Management System.
 
