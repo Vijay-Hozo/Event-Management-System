@@ -20,3 +20,5 @@ The system caters to distinct user roles – Organizers and Attendees. Organizer
 - Attendees can access event details, schedules, and promotional information.
 - Attendees can sign up for events and purchase tickets through the system.
 - Attendees can give rating and review for an event
+
+## Operating Environment
