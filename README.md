@@ -22,3 +22,19 @@ The system caters to distinct user roles – Organizers and Attendees. Organizer
 - Attendees can give rating and review for an event
 
 ## Operating Environment
+
+
+## Assumptions and Dependencies : 
+
+**The Assumptions are :**
+- The coding should be error free
+- The information of all attendees, events and events organizer must be stored in a database that is accessible by the website.
+- The system should provide search facility and support quick transactions.
+ - Users may access from any computer that has internet browsing capabilities and an Internet connection.
+
+**The Dependencies are :**
+- Any update regarding the event is to be recorded to the database and the data entered should be correct.
+- The information of all users must be stored in a database that is accessible by the Event Management System.
+- The system should have the general report stored.
+- On the basis of listing requirements and specification the project will be developed and run.
+
