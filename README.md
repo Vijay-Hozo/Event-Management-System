@@ -1,4 +1,11 @@
-# Event Management System
+**<p style="text-align:left;">
+    TEAM 14
+    <span style="float:right;">
+        PROJECT 9
+    </span>**
+</p>
+
+# <div style="text-align: CENTER"> EVENT MANAGEMENT SYSTEM  </div>
 
 An application for managing events, including registrations,
 schedules, and ticket sales. Event organizers can create, update, and delete
