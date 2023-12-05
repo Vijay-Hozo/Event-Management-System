@@ -22,3 +22,8 @@ The system caters to distinct user roles – Organizers and Attendees. Organizer
 - Attendees can give rating and review for an event
 
 ## Operating Environment
+
+The Event Management System is an application will be operating in all operating system like Linux, MacOS.The
+only requirement to use this online product would be the internet connection.The hardware configuration include Hard Disk: 40 GB, Monitor: 15” Color monitor, Keyboard:
+122 keys. The basic input devices required are keyboard, mouse and output devices are monitor,
+printer etc.
