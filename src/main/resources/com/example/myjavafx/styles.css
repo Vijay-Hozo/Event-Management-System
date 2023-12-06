@@ -1,0 +1,29 @@
+@font-face{
+font-family:"Poppins";
+src:url("fonts/Poppins-Regular.ttf");
+}
+
+
+.root{
+    -fx-background-color:#2E0A4A;
+    -fx-font-family:"Poppins";
+}
+
+#NavBar{
+-fx-background-color:6D04CC
+}
+
+#ClickMeButton{
+    -fx-padding: 15px;
+    -fx-padding-left: 20px;
+    -fx-padding-right: 20px;
+    -fx-color:"green";
+    -fx-text-fill:"red";
+}
+
+.hyperlink:hover{
+-fx-text-fill:"black";
+
+}
+
+
