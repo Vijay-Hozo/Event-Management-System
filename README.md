@@ -178,3 +178,66 @@ classDiagram
         
     }
 ```
+
+
+## Database Design :
+<br>
+
+**Attendee Table->**
+
+| Field Name        | Data Type   | Constraint  | Description                                |
+|-------------------|-------------|-------------|--------------------------------------------|
+| Attendee_ID       | varchar(20) | Primary key | Unique ID for attendee                     |
+| Attendee_name     | varchar(20) | Not Null    |                                  user name |
+| Email             | varchar(20) | Not Null    | user email for login procedure             |
+| Password          | varchar(20) | Not Null    | user password for login procedure          |
+| Mobile_Number     | bigint      | Not Null    | mobile number for otp verification         |
+| Events_registered | varchar(20) | Not Null    | events register to show the upcoming event |
+
+<br>
+
+**Organizer Table->**
+
+| Field Name        | Data Type   | Constraint  | Description                                |
+|-------------------|-------------|-------------|--------------------------------------------|
+| Attendee_ID       | varchar(20) | Primary key | Unique ID for attendee                     |
+| Attendee_name     | varchar(20) | Not Null    |                                  user name |
+| Email             | varchar(20) | Not Null    | user email for login procedure             |
+| Password          | varchar(20) | Not Null    | user password for login procedure          |
+| Mobile_Number     | bigint      | Not Null    | mobile number for otp verification         |
+| Events_registered | varchar(20) | Not Null    | events register to show the upcoming event |
+
+<br>
+
+**New Event Table->**
+
+| Field name              | Datatype    | Constraint  | Description                    |
+|-------------------------|-------------|-------------|--------------------------------|
+| Event_ID                | varchar(20) | Primary key | unique id for event            |
+| Organizer_ID            | varchar(20) | Foreign key | organizer id from organizer    |
+| Event name              | varchar(20) | Not Null    | Event name                     |
+| Event_Description       | varchar(20) | Not Null    | Brief Description about event  |
+| Venue                   | varchar(20) | Not Null    | Venue of the event             |
+| Duration                | int         | Not Null    | Duration of the event          |
+| Event_Date              | DateTime    | Not Null    | Date of the event              |
+| Created_At              | Timestamp   | Not Null    | When the event is created      |
+| Organizer_Mobile_Number | bigint      | foreign key | Mobile number of the organizer |
+| Guest                   | varchar     | Not Null    | Guest Description of the event |
+| Ticket_Fare             | int         | Not Null    | Fare price of the event        |
+
+<br>
+
+**Ticket Table->**
+| Field name              | Datatype    | Constraint  | Description                    |
+|-------------------------|-------------|-------------|--------------------------------|
+| Event_ID                | varchar(20) | Primary key | unique id for event            |
+| Organizer_ID            | varchar(20) | Foreign key | organizer id from organizer    |
+| Event name              | varchar(20) | Not Null    | Event name                     |
+| Event_Description       | varchar(20) | Not Null    | Brief Description about event  |
+| Venue                   | varchar(20) | Not Null    | Venue of the event             |
+| Duration                | int         | Not Null    | Duration of the event          |
+| Event_Date              | DateTime    | Not Null    | Date of the event              |
+| Created_At              | Timestamp   | Not Null    | When the event is created      |
+| Organizer_Mobile_Number | bigint      | foreign key | Mobile number of the organizer |
+| Guest                   | varchar     | Not Null    | Guest Description of the event |
+| Ticket_Fare             | int         | Not Null    | Fare price of the event        |
