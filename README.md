@@ -235,3 +235,7 @@ classDiagram
 | Organizer_Mobile_Number | bigint      | foreign key | Mobile number of the organizer |
 | Guest                   | varchar     | Not Null    | Guest Description of the event |
 | Ticket_Fare             | int         | Not Null    | Fare price of the event        |
+
+
+
+
