@@ -6,5 +6,4 @@ module com.example.myjavafx {
 
     opens com.example.myjavafx to javafx.fxml;
     exports com.example.myjavafx;
-    exports com.example.myjavafx.Controllers;
 }
