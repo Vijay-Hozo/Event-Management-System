@@ -15,12 +15,29 @@ public class LoginController {
     private Scene scene;
     private Parent root;
 
+
     public void BackToHome(MouseEvent event) throws IOException {
-        System.out.println("Back Home");
         root = FXMLLoader.load(getClass().getResource("Home.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void GoToSignUpOrg(MouseEvent event) {
+//        root = FXMLLoader.load(getClass().getResource("SignUpAsOrganizer.fxml"));
+//        stage =  (Stage) ((Node)event.getSource()).getScene().getWindow();
+//        scene = new Scene(root);
+//        stage.setScene(scene);
+//        stage.show();
+    }
+
+    public void GoToSignUpAttendee(MouseEvent event) {
+//        root = FXMLLoader.load(getClass().getResource("SignUpAsAttendee.fxml"));
+//        stage =  (Stage) ((Node)event.getSource()).getScene().getWindow();
+//        scene = new Scene(root);
+//        stage.setScene(scene);
+//        stage.show();
+
     }
 }

@@ -15,7 +15,7 @@ public class HomeApplication extends Application {
 
         Scene scene = new Scene(fxmlLoader.load(), 1070, 716);
         scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
-        stage.setTitle("Hey GOKUL!");
+        stage.setTitle("Event Management System");
         stage.setScene(scene);
 
         stage.setResizable(false);

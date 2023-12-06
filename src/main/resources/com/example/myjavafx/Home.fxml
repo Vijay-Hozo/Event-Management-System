@@ -54,7 +54,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <ImageView fitHeight="321.0" fitWidth="553.0" layoutX="234.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="303.0" fitWidth="582.0" layoutX="234.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/Events.png" />
          </image>
