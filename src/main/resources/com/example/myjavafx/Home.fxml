@@ -15,10 +15,10 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="870.0" styleClass="root" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1070.0" styleClass="root" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.HomeController">
    <children>
-      <Pane fx:id="NavBar" prefHeight="59.0" prefWidth="870.0" style="-fx-background-color: #6D04C0; -fx-opacity: 0.62;" />
-      <Button fx:id="LogInButton" alignment="CENTER" layoutX="245.0" layoutY="448.0" mnemonicParsing="false" onMouseClicked="#LoginAsOrg" prefHeight="30.0" prefWidth="189.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="Login as Organizer" textAlignment="CENTER" textFill="#1e1e1e">
+      <Pane fx:id="NavBar" prefHeight="59.0" prefWidth="1070.0" style="-fx-background-color: #6D04C0; -fx-opacity: 0.62;" />
+      <Button fx:id="LogInButton" alignment="CENTER" layoutX="270.0" layoutY="541.0" mnemonicParsing="false" onMouseClicked="#LoginAsOrg" prefHeight="43.0" prefWidth="209.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="Login as Organizer" textAlignment="CENTER" textFill="#1e1e1e">
          <font>
             <Font name="Poppins Bold" size="14.0" />
          </font>
@@ -36,7 +36,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="LogInButton1" alignment="CENTER" layoutX="451.0" layoutY="448.0" mnemonicParsing="false" onMouseClicked="#LoginAsAttendee" prefHeight="30.0" prefWidth="189.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="Login as Attendee" textAlignment="CENTER" textFill="#1e1e1e">
+      <Button fx:id="LogInButton1" alignment="CENTER" layoutX="540.0" layoutY="541.0" mnemonicParsing="false" onMouseClicked="#LoginAsAttendee" prefHeight="43.0" prefWidth="210.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="Login as Attendee" textAlignment="CENTER" textFill="#1e1e1e">
          <font>
             <Font name="Poppins Bold" size="14.0" />
          </font>
@@ -54,7 +54,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <ImageView fitHeight="243.0" fitWidth="450.0" layoutX="215.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="321.0" fitWidth="553.0" layoutX="234.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/Events.png" />
          </image>
@@ -62,9 +62,9 @@
             <Rectangle2D />
          </viewport>
       </ImageView>
-      <Label layoutX="199.0" layoutY="88.0" text="Explore.     Unveil.     Discover.">
+      <Label layoutX="205.0" layoutY="101.0" text="Explore.     Unveil.     Discover.">
          <font>
-            <Font name="Poppins ExtraBold" size="34.0" />
+            <Font name="Poppins ExtraBold" size="42.0" />
          </font>
          <textFill>
             <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.18181817098097364">
@@ -83,9 +83,9 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="327.0" layoutY="131.0" text="EVENTS AROUND YOU">
+      <Label layoutX="379.0" layoutY="161.0" text="EVENTS AROUND YOU">
          <font>
-            <Font name="Poppins Black" size="20.0" />
+            <Font name="Poppins Black" size="24.0" />
          </font>
          <textFill>
             <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.18181817098097364">
