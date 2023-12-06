@@ -88,6 +88,7 @@ erDiagram
     ORGANIZER{
         Varchar Organizer_ID PK
         Varchar Organizer_Name
+        bigint Organizer_Mobile_number
         Varchar Email
         Password Password
     }
