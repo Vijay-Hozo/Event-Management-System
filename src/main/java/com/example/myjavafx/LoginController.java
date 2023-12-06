@@ -25,6 +25,7 @@ public class LoginController {
     }
 
     public void GoToSignUpOrg(MouseEvent event) {
+        System.out.println("SignUp Org");
 //        root = FXMLLoader.load(getClass().getResource("SignUpAsOrganizer.fxml"));
 //        stage =  (Stage) ((Node)event.getSource()).getScene().getWindow();
 //        scene = new Scene(root);
@@ -33,6 +34,7 @@ public class LoginController {
     }
 
     public void GoToSignUpAttendee(MouseEvent event) {
+        System.out.println("SignUpAtt");
 //        root = FXMLLoader.load(getClass().getResource("SignUpAsAttendee.fxml"));
 //        stage =  (Stage) ((Node)event.getSource()).getScene().getWindow();
 //        scene = new Scene(root);
