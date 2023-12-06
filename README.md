@@ -1,11 +1,4 @@
-**<p style="text-align:left;">
-    TEAM 14
-    <span style="float:right;">
-        PROJECT 9
-    </span>**
-</p>
-
-# <div style="text-align: CENTER"> EVENT MANAGEMENT SYSTEM  </div>
+# Event Management System
 
 An application for managing events, including registrations,
 schedules, and ticket sales. Event organizers can create, update, and delete
@@ -110,6 +103,73 @@ erDiagram
     }
 
 
+```
+
+## Class Diagram
+
+```mermaid
+
+---
+title: EVENT MANAGEMENT SYSTEM 
+---
+
+classDiagram
+    ATTENDEE "1" <|-- "*" NEW_EVENT 
+    ATTENDEE "1" <|-- "1..*" TICKET 
+    ORGANIZER "1" ..> "1..*" NEW_EVENT 
+    NEW_EVENT "1"..>"*" TICKET 
+
+
+    NEW_EVENT:+ Varchar Event_ID 
+    NEW_EVENT:- Varchar Organizer_ID 
+    NEW_EVENT:+ Varchar Event_Name
+    NEW_EVENT:+ Varchar Event_Description
+    NEW_EVENT:+ Varchar Venue
+    NEW_EVENT:+ int Duration
+    NEW_EVENT:+ DateTime Event_Date
+    NEW_EVENT:+ timestamp Created_At
+    NEW_EVENT:+ bigint Organizer_Mobile_number
+    NEW_EVENT:+ Varchar Guest
+    NEW_EVENT:+ int Ticket_Fare
+    NEW_EVENT:+ validateTicket()
+    NEW_EVENT:+ createTicket()
+
+    class ATTENDEE{
+        - Varchar Attendee_ID PK
+        + Varchar Attendee_Name
+        - Varchar Email
+        - Varchar Password
+        - bigint Mobile_Number
+        - Varchar Events_registered
+        + login()
+        + checkLogin()
+        + getEventDetails()
+        + giveReview()
+        + ticketBooking()
+        + cancelTicket()
+    }
+
+    class ORGANIZER{
+       - Varchar Organizer_ID 
+       + Varchar Organizer_Name
+       - Varchar Email
+       - Password Password
+       # addEvent()
+       # updateEvent()
+       # deleteEvent()
+    }
+
+    class TICKET{
+        + Varchar Ticket_ID 
+        + Varchar Attendee_ID 
+        + Varchar Event_ID 
+        + Varchar Event_Name 
+        + DateTime Event_Date 
+        + image QR_Code
+        + int Ticket_Fare
+        + printTicket()
+        
+    }
 ```
 
 ## Class Diagram
