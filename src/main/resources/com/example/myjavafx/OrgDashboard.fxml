@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="716.0" prefWidth="1070.0" style="-fx-background-color: #2E0A4A;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.OrgDashboard">
+   <padding>
+      <Insets left="15.0" right="15.0" top="5.0" />
+   </padding>
+   <children>
+      <Pane layoutX="-26.0" layoutY="-0.7999999999999998" prefHeight="722.0" prefWidth="378.0" style="-fx-background-color: #9400FF; -fx-background-radius: 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="-6.0">
+         <children>
+            <Hyperlink alignment="CENTER" layoutX="107.0" layoutY="288.0" text="Manage Events" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="28.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="68.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/DashboardIcon.png" />
+               </image>
+            </ImageView>
+            <Hyperlink alignment="CENTER" layoutX="106.0" layoutY="349.0" text="Create Events" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="28.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="68.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/plusIcon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="80.0" layoutY="649.0" text="Hello      ,  " textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="159.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Hand.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="OrgDashboardName" layoutX="214.0" layoutY="649.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="411.0" layoutY="79.0" text="Your Events" textFill="WHITE">
+         <font>
+            <Font name="Poppins SemiBold" size="43.0" />
+         </font>
+      </Label>
+      <Pane fx:id="OrgEventCard" layoutX="421.0" layoutY="192.0" prefHeight="225.0" prefWidth="558.0" style="-fx-background-color: #9400FF; -fx-background-radius: 25; -fx-opacity: 0.8;">
+         <children>
+            <ImageView fx:id="OrgEventCardImage" fitHeight="225.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/event.jpg" />
+               </image></ImageView>
+            <Label fx:id="OrgEventCardName" layoutX="241.0" layoutY="8.0" text="Event Name" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="OrgEventCardVenue" layoutX="276.0" layoutY="41.0" text="Venue" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="OrgEventCardNoofAttendees" layoutX="242.0" layoutY="97.0" prefHeight="32.0" prefWidth="243.0" text="No of Attendees" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="OrgEventCardTicketAvail" layoutX="242.0" layoutY="135.0" prefHeight="28.0" prefWidth="276.0" text="Tickets Available" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="OrgEventCardTicketFare" layoutX="271.0" layoutY="174.0" prefHeight="28.0" prefWidth="236.0" text="Ticket Fare" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="OrgEventCardEditButton" fitHeight="28.0" fitWidth="28.0" layoutX="519.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/pencil.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="253.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/location.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="252.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/rupees.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow height="16.810000000000002" radius="8.197500000000002" spread="0.48" width="17.98">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" opacity="0.3252280354499817" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
