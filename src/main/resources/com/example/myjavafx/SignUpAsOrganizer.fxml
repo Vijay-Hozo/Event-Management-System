@@ -85,7 +85,7 @@
                 <Font name="Poppins SemiBold" size="20.0" />
             </font>
         </Label>
-        <Button fx:id="LogInButton" alignment="CENTER" layoutX="105.0" layoutY="590.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="190.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="CREATE ACCOUNT" textAlignment="CENTER" textFill="#1e1e1e">
+        <Button fx:id="LogInButton" alignment="CENTER" layoutX="105.0" layoutY="590.0" mnemonicParsing="false" onMouseClicked="#HandleCreateAccountOrg" prefHeight="43.0" prefWidth="190.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="CREATE ACCOUNT" textAlignment="CENTER" textFill="#1e1e1e">
             <font>
                 <Font name="Poppins Bold" size="14.0" />
             </font>

@@ -18,7 +18,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1070.0" styleClass="root" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.HomeController">
    <children>
       <Pane fx:id="NavBar" prefHeight="59.0" prefWidth="1070.0" style="-fx-background-color: #6D04C0; -fx-opacity: 0.62;" />
-      <Button fx:id="LogInButton" alignment="CENTER" layoutX="270.0" layoutY="541.0" mnemonicParsing="false" onMouseClicked="#LoginAsOrg" prefHeight="43.0" prefWidth="209.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="Login as Organizer" textAlignment="CENTER" textFill="#1e1e1e">
+      <Button fx:id="LogInButton" alignment="CENTER" layoutX="269.0" layoutY="541.0" mnemonicParsing="false" onMouseClicked="#LoginAsOrg" prefHeight="43.0" prefWidth="229.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="Continue as Organizer" textAlignment="CENTER" textFill="#1e1e1e">
          <font>
             <Font name="Poppins Bold" size="14.0" />
          </font>
@@ -36,7 +36,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="LogInButton1" alignment="CENTER" layoutX="540.0" layoutY="541.0" mnemonicParsing="false" onMouseClicked="#LoginAsAttendee" prefHeight="43.0" prefWidth="210.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="Login as Attendee" textAlignment="CENTER" textFill="#1e1e1e">
+      <Button fx:id="LogInButton1" alignment="CENTER" layoutX="526.0" layoutY="541.0" mnemonicParsing="false" onMouseClicked="#LoginAsAttendee" prefHeight="43.0" prefWidth="232.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="Continue as Attendee" textAlignment="CENTER" textFill="#1e1e1e">
          <font>
             <Font name="Poppins Bold" size="14.0" />
          </font>

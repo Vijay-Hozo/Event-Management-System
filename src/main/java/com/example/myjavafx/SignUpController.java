@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import java.sql.*;
 
 import java.io.IOException;
+import java.util.Random;
 
 public class SignUpController {
 
@@ -32,14 +33,24 @@ public class SignUpController {
     private TextField SignUpAsAttendeeMobilenumber;
 
 
-    public  void InsertInDB(){
+    public  void InsertInDBAttendee(){
 
         DBConnection connect = new DBConnection();
         Connection connectDB = connect.getConnection();
 
 
-        String insertQuery = "insert into users(userId,username,email,password,mobilenumber) values(2,'japan','japan@gmail.com','japan',9099090909);";
+        Random rand = new Random();
+        int x = rand.nextInt(100000);
 
+        System.out.println("User ID "+x);
+        System.out.println("Username :"+SignUpAsAttendeeUserName.getText());
+        System.out.println("Email :"+SignUpAsAttendeeEmail.getText());
+        System.out.println("pass :"+SignUpAsAttendeePassword.getText());
+        System.out.println("mob :"+SignUpAsAttendeeMobilenumber.getText());
+
+        String insertQuery = String.format("insert into attendee(userId,username,email,password,mobilenumber) values(%d,'%s','%s','%s',%d);",x,SignUpAsAttendeeUserName.getText(),SignUpAsAttendeeEmail.getText(),SignUpAsAttendeePassword.getText(),Integer.parseInt(SignUpAsAttendeeMobilenumber.getText()));
+
+        System.out.println(insertQuery);
         try {
             Statement statement = connectDB.createStatement();
             int queryResult = statement.executeUpdate(insertQuery);
@@ -54,15 +65,48 @@ public class SignUpController {
             e.printStackTrace();
         }
     }
+    public  void InsertInDBOrg(){
+
+            DBConnection connect = new DBConnection();
+            Connection connectDB = connect.getConnection();
+
+
+            System.out.println("Username :"+SignUpAsOrgUserName.getText());
+            System.out.println("Email :"+SignUpAsOrgEmail.getText());
+            System.out.println("pass :"+SignUpAsOrgPassword.getText());
+            System.out.println("mob :"+SignUpAsOrgMobilenumber.getText());
+
+            String insertQuery = String.format("insert into organizer(organizerId,username,email,password,mobilenumber) values('%s','%s','%s','%s',%d);",SignUpAsOrgId.getText(),SignUpAsOrgUserName.getText(),SignUpAsOrgEmail.getText(),SignUpAsOrgPassword.getText(),Integer.parseInt(SignUpAsOrgMobilenumber.getText()));
+
+            System.out.println(insertQuery);
+            try {
+                Statement statement = connectDB.createStatement();
+                int queryResult = statement.executeUpdate(insertQuery);
+
+                System.out.println("QueryRes    "+queryResult);
+
+                if (queryResult==1){
+                    System.out.println("Org Value Inserted");
+                }
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 
 
     // SignUp Button Action
 
-    public void HandleCreateAccount(MouseEvent e){
+    public void HandleCreateAccountAttendee(MouseEvent e){
         if (!SignUpAsAttendeeUserName.getText().isBlank() && !SignUpAsAttendeePassword.getText().isBlank() && !SignUpAsAttendeeEmail.getText().isBlank() && !SignUpAsAttendeeMobilenumber.getText().isBlank()){
-            InsertInDB();
+            InsertInDBAttendee();
         }
     }
+     public void HandleCreateAccountOrg(MouseEvent e){
+            if (!SignUpAsOrgUserName.getText().isBlank() && !SignUpAsOrgPassword.getText().isBlank() && !SignUpAsOrgEmail.getText().isBlank() && !SignUpAsOrgMobilenumber.getText().isBlank()){
+                InsertInDBOrg();
+            }
+        }
 
     public void GetSignUpAsAttendeeDetails(MouseEvent event){
 

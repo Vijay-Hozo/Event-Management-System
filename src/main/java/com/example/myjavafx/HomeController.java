@@ -37,6 +37,25 @@ public class HomeController {
         stage.setScene(scene);
         stage.show();
     }
+    public void GoToSignUpOrg(MouseEvent event) throws IOException {
+        System.out.println("SignUp Org");
+        root = FXMLLoader.load(getClass().getResource("SignUpAsOrganizer.fxml"));
+        System.out.println("Root "+root);
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void GoToSignUpAttendee(MouseEvent event) throws IOException {
+        //System.out.println("SignUpAtt");
+        Parent root = FXMLLoader.load(getClass().getResource("SignUpAsAttendee.fxml"));
+        stage =  (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+    }
 
 
 }
