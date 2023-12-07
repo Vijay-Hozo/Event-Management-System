@@ -1,8 +1,9 @@
 package com.example.myjavafx;
 
-import javafx.application.Application;
+ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -19,6 +20,9 @@ public class HomeApplication extends Application {
         stage.setScene(scene);
 
         stage.setResizable(false);
+
+       Font.loadFont(getClass().getResourceAsStream("fonts/Poppins-Black.ttf"),20);
+       Font.loadFont(getClass().getResourceAsStream("fonts/Poppins-ExtraBold.ttf"),42);
         stage.show();
     }
 

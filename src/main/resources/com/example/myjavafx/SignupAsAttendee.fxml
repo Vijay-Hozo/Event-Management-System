@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="716.0" prefWidth="1070.0" style="-fx-background-color: #2E0A4A;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.SignUpController">
+    <children>
+        <ImageView fitHeight="458.0" fitWidth="467.0" layoutX="509.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/Sign_up.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="41.0" layoutX="44.0" layoutY="42.0" onMouseClicked="#BackToHome" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@icons/arrow%20left.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="452.0" layoutY="42.0" text="SIGN UP" textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="Poppins SemiBold" size="39.0" />
+            </font>
+        </Label>
+        <Line endX="132.20001220703125" endY="-1.52587890625E-5" layoutX="291.0" layoutY="71.0" startX="-109.39999389648438" startY="-1.52587890625E-5">
+            <stroke>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.40888887643814087" green="0.014814814552664757" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </stroke>
+        </Line>
+        <Line endX="251.0" endY="-1.52587890625E-5" layoutX="609.0" layoutY="71.0" startX="30.20001220703125" startY="-1.52587890625E-5">
+            <stroke>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.40784314274787903" green="0.01568627543747425" blue="1.0" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.9789473414421082" green="0.9789473414421082" blue="0.9789473414421082" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </stroke>
+        </Line>
+        <Label alignment="CENTER" layoutX="95.0" layoutY="145.0" text="Username" textFill="WHITE">
+            <font>
+                <Font name="Poppins SemiBold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="SignUpAsAttendeeUserName" layoutX="93.0" layoutY="177.0" prefHeight="21.0" prefWidth="289.0" promptText="Enter Your Username" style="-fx-background-color: #fFF;">
+            <font>
+                <Font name="Poppins Light" size="12.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.08" height="18.66" radius="7.0725" width="11.63">
+                    <color>
+                        <Color opacity="0.8085106015205383" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <Label alignment="CENTER" layoutX="95.0" layoutY="235.0" text="Email" textFill="WHITE">
+            <font>
+                <Font name="Poppins SemiBold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="SignUpAsAttendeeEmail" layoutX="93.0" layoutY="267.0" prefHeight="21.0" prefWidth="289.0" promptText="Enter Your Email" style="-fx-background-color: #fFF;">
+            <font>
+                <Font name="Poppins Light" size="12.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.08" height="18.66" radius="7.0725" width="11.63">
+                    <color>
+                        <Color opacity="0.8085106015205383" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <Label layoutX="94.0" layoutY="325.0" text="Password" textFill="WHITE">
+            <font>
+                <Font name="Poppins SemiBold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="SignUpAsAttendeePassword" layoutX="94.0" layoutY="357.0" prefHeight="21.0" prefWidth="289.0" promptText="Enter Your Password" style="-fx-background-color: #fFF;">
+            <font>
+                <Font name="Poppins Light" size="12.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.08" height="18.66" radius="7.0725" width="11.63">
+                    <color>
+                        <Color opacity="0.8085106015205383" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <Label layoutX="91.0" layoutY="410.0" text="Mobile Number" textFill="WHITE">
+            <font>
+                <Font name="Poppins SemiBold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="SignUpAsAttendeeMobilenumber" layoutX="93.0" layoutY="442.0" prefHeight="21.0" prefWidth="289.0" promptText="Enter Your Mobile Number" style="-fx-background-color: #fFF;">
+            <font>
+                <Font name="Poppins Light" size="12.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.08" height="18.66" radius="7.0725" width="11.63">
+                    <color>
+                        <Color opacity="0.8085106015205383" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <Button fx:id="SignUpAsAttendeeCreateAccount" alignment="CENTER" layoutX="106.0" layoutY="522.0" mnemonicParsing="false" onMouseClicked="#HandleCreateAccount" prefHeight="43.0" prefWidth="190.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="CREATE ACCOUNT" textAlignment="CENTER" textFill="#1e1e1e">
+            <font>
+                <Font name="Poppins Bold" size="14.0" />
+            </font>
+            <effect>
+                <DropShadow height="2.28" radius="1.81" width="6.96">
+                    <color>
+                        <Color opacity="0.38905778527259827" />
+                    </color>
+                </DropShadow>
+            </effect>
+            <padding>
+                <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+            </padding>
+        </Button>
+        <Label layoutX="110.0" layoutY="577.0" text="Already a member ?" textFill="WHITE">
+            <font>
+                <Font name="Poppins Regular" size="16.0" />
+            </font>
+        </Label>
+        <Hyperlink layoutX="287.0" layoutY="572.0" onMouseClicked="#LoginAsAttendee" prefHeight="1.0" prefWidth="70.0" text="Log In">
+            <font>
+                <Font name="Poppins Regular" size="16.0" />
+            </font>
+        </Hyperlink>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+    </padding>
+</AnchorPane>
