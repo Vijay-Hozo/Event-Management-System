@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="550.0" style="-fx-background-color: #9400FF;" styleClass="shadow" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.OrgDashboard2">
+   <children>
+      <ImageView fitHeight="227.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/event.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="226.0" prefWidth="342.0" stylesheets="@../styles.css">
+         <children>
+            <Label fx:id="OrgEventCardName" layoutX="10.0" layoutY="5.0" text="Event Name" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="OrgEventCardVenue" layoutX="73.0" layoutY="34.0" text="Venue" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="OrgEventCardNoofAttendees" layoutX="14.0" layoutY="88.0" prefHeight="32.0" prefWidth="243.0" text="No of Attendees" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="OrgEventCardTicketAvail" layoutX="16.0" layoutY="123.0" prefHeight="28.0" prefWidth="276.0" text="Tickets Available" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="OrgEventCardTicketFare" layoutX="37.0" layoutY="183.0" prefHeight="28.0" prefWidth="236.0" text="Ticket Fare" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="OrgEventCardEditButton" fitHeight="28.0" fitWidth="28.0" layoutX="286.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/pencil.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="52.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/location.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="19.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/rupees.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</HBox>

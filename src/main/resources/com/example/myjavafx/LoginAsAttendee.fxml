@@ -122,7 +122,7 @@
       </Button>
       <ImageView fitHeight="35.0" fitWidth="41.0" layoutX="54.0" layoutY="52.0" onMouseClicked="#BackToHome" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@icons/arrow%20left.png" />
+            <Image url="@icons/arrow_left.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />

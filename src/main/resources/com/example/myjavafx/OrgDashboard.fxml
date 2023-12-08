@@ -28,7 +28,7 @@
                   <Image url="@icons/DashboardIcon.png" />
                </image>
             </ImageView>
-            <Hyperlink alignment="CENTER" layoutX="106.0" layoutY="349.0" text="Create Events" textFill="WHITE">
+            <Hyperlink alignment="CENTER" layoutX="106.0" layoutY="349.0" onMouseClicked="#GoToCreateEvent" text="Create Events" textFill="WHITE">
                <font>
                   <Font name="Poppins SemiBold" size="28.0" />
                </font>

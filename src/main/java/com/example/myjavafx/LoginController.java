@@ -94,6 +94,7 @@ public class LoginController {
                 if(queryresult.getInt( 1)==1){
                     System.out.println("Login Success");
                       // Navigation
+                    GoToAttendeeHome(e);
                 }
                 else{
                     System.out.println("Enter correct Username and Password...!");
@@ -102,6 +103,8 @@ public class LoginController {
 
         } catch (SQLException eve) {
             eve.printStackTrace();
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
         }
     }
 
@@ -116,7 +119,7 @@ public class LoginController {
     }
 
 
-    private void GoToOrgDashboard(MouseEvent event) throws IOException, SQLException {
+    public void GoToOrgDashboard(MouseEvent event) throws IOException, SQLException {
 
 
         String Name = OrganizerUsername.getText();
@@ -128,7 +131,8 @@ public class LoginController {
 
         OrgDashboard OrgDashboardController = loader.getController();
         OrgDashboardController.setName(Name);
-        OrgDashboardController.LoadEventsOrg(OrgId);
+        OrgEventCardLoader loadData = new OrgEventCardLoader();
+
 
 
         //root = FXMLLoader.load(getClass().getResource("OrgDashboard.fxml"));
@@ -137,6 +141,26 @@ public class LoginController {
 
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void GoToAttendeeHome(MouseEvent event) throws IOException,SQLException{
+
+        String username = AttendeeUsername.getText();
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AttendeeHome.fxml"));
+        root = loader.load();
+
+        AttendeeHome AttendeeHomeController = loader.getController();
+
+        AttendeeHomeController.setAttendeeHomeName(username);
+        AttendeeHomeController.LoadEventsAttendee();
+
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+
     }
     public void GoToSignUpOrg(MouseEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("SignUpAsOrganizer.fxml"));

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1070.0" style="-fx-background-color: #27005D;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#e4f1ff" layoutX="487.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment">
+         <font>
+            <Font name="Poppins Black" size="24.0" />
+         </font>
+      </Text>
+      <Pane layoutX="33.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #9400FF; -fx-background-radius: 20px;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <ImageView fx:id="paymentimageview" fitHeight="370.0" fitWidth="580.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/eventdescription.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="208.0" layoutY="450.0" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10px;">
+               <children>
+                  <Text fill="#d10606" layoutX="3.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⚡ON SALE⚡">
+                     <font>
+                        <Font name="Poppins ExtraBold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text fill="#e4f1ff" layoutX="202.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Name" wrappingWidth="157.52806091308594">
+               <font>
+                  <Font name="Poppins Black" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="823.0" layoutY="115.0" prefHeight="606.0" prefWidth="462.0" style="-fx-background-color: #94 #27005D00FF;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <Pane layoutX="7.0" layoutY="11.0" prefHeight="587.0" prefWidth="447.0" style="-fx-background-color: #27005D;">
+               <children>
+                  <Text fill="#e4f1ff" layoutX="197.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket" textAlignment="CENTER">
+                     <font>
+                        <Font name="Poppins Black" size="24.0" />
+                     </font>
+                  </Text>
+                  <Pane layoutX="117.0" layoutY="105.0" prefHeight="49.0" prefWidth="233.0" style="-fx-background-radius: 10px; -fx-background-color: #9400FF;">
+                     <children>
+                        <Text layoutX="26.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" wrappingWidth="98.44815826416016">
+                           <font>
+                              <Font name="Poppins Black" size="18.0" />
+                           </font>
+                        </Text>
+                        <Box depth="100" height="25.0" layoutX="166.0" layoutY="23.0" width="25.0" />
+                        <Text layoutX="193.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Line endX="176.86660766601562" endY="1.52587890625E-5" layoutX="236.0" layoutY="75.0" startX="-181.53335571289062" startY="1.52587890625E-5" />
+                  <Text fill="#e4f1ff" layoutX="145.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Payment">
+                     <font>
+                        <Font name="Poppins Black" size="24.0" />
+                     </font>
+                  </Text>
+                  <Line endX="176.86660766601562" endY="1.52587890625E-5" layoutX="230.0" layoutY="290.0" startX="-181.53335571289062" startY="1.52587890625E-5" />
+                  <ImageView fx:id="upiimageview" fitHeight="25.0" fitWidth="91.0" layoutX="180.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Upi.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="paytmimageview" fitHeight="25.0" fitWidth="98.0" layoutX="180.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/paytm.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="paypalimageview" fitHeight="19.0" fitWidth="141.0" layoutX="180.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/paypal.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="117.0" layoutY="170.0" prefHeight="49.0" prefWidth="233.0" style="-fx-background-radius: 10px; -fx-background-color: #9400FF;">
+                     <children>
+                        <Text layoutX="26.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Fare: " wrappingWidth="148.04999542236328">
+                           <font>
+                              <Font name="Poppins Black" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Text fill="#fafafa" layoutX="109.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have Fun and More Fun!!!">
+                     <font>
+                        <Font name="Poppins ExtraBold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
