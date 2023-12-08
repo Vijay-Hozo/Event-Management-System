@@ -93,7 +93,7 @@ public class LoginController {
 
                 if(queryresult.getInt( 1)==1){
                     System.out.println("Login Success");
-                      // Navigation
+                      // Navigatio
                     GoToAttendeeHome(e);
                 }
                 else{
@@ -131,8 +131,10 @@ public class LoginController {
 
         OrgDashboard OrgDashboardController = loader.getController();
         OrgDashboardController.setName(Name);
+
         OrgEventCardLoader loadData = new OrgEventCardLoader();
 
+        OrgDashboardController.LoadEventsOrg(OrgId);
 
 
         //root = FXMLLoader.load(getClass().getResource("OrgDashboard.fxml"));
@@ -162,6 +164,7 @@ public class LoginController {
         stage.show();
 
     }
+
     public void GoToSignUpOrg(MouseEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("SignUpAsOrganizer.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();

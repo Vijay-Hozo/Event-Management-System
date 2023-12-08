@@ -9,6 +9,8 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import javafx.scene.control.Label;
+
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -54,8 +56,8 @@ public class OrgDashboard {
             OrgEventCardTicketFare.setText(Integer.toString(queryresult.getInt("ticket_fare")).concat(" /ticket"));
         }
 
-    }
 
+    }
 
     private Stage stage;
     private Scene scene;
@@ -68,6 +70,7 @@ public class OrgDashboard {
         stage.setScene(scene);
         stage.show();
     }
+
 
 
 }
