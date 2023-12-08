@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -17,9 +18,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class OrgDashboard2 {
 
@@ -39,11 +38,21 @@ public class OrgDashboard2 {
 
 
 
+    @FXML
+    VBox OrgDashboardVbox;
+
+    private List<OrgEventCardModel> OrganizerEvents;
+
+
+
     public void setName(String name){
         OrgDashboardName.setText(name.toUpperCase());
     }
 
-    public void LoadEventsOrg(String OrgId) throws SQLException {
+    List<String> OrgEventsList = new ArrayList<>();
+
+    public void LoadEventsOrg(String OrgId) throws SQLException, IOException {
+
 
         DBConnection connect =  new DBConnection();
         Connection connectDb =connect.getConnection();
@@ -52,16 +61,32 @@ public class OrgDashboard2 {
 
         Statement statement = connectDb.createStatement();
         ResultSet queryresult= statement.executeQuery(getEventsQuery);
+
         while (queryresult.next()){
+              List<String> queryResultModel = new ArrayList<>();
+              Map<String,String> queryResultModel2=new HashMap<String,String>();
+
+
+            String EventName = queryresult.getString("event_name");
+            String EventVenue = queryresult.getString("venue");
+            String EventNoofAttendees = Integer.toString(queryresult.getInt("no_of_attendees")).concat(" Attending");
+            String EventTicketAvail = Integer.toString(queryresult.getInt("tickets_remaining")).concat(" tickets available");
+            String EventTicketFare = Integer.toString(queryresult.getInt("ticket_fare")).concat(" /ticket");
+
+            queryResultModel2.put("EventName",EventName);
+            queryResultModel2.put("EventVenue",EventVenue);
+            queryResultModel2.put("EventNoofAttendees",EventNoofAttendees);
+            queryResultModel2.put("EventTicketAvail",EventTicketAvail);
+            queryResultModel2.put("EventTicketFare",EventTicketFare);
+
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("models/OrgEventCard.fxml"));
-            //VBox cardBox = fxmlLoader.load();
+            HBox cardBox = fxmlLoader.load();
             OrgEventCardController cardController = fxmlLoader.getController();
-            OrgEventCardName.setText(queryresult.getString("event_name"));
-            OrgEventCardVenue.setText(queryresult.getString("venue"));
-            OrgEventCardNoofAttendees.setText(Integer.toString(queryresult.getInt("no_of_attendees")).concat(" Attending"));
-            OrgEventCardTicketAvail.setText(Integer.toString(queryresult.getInt("tickets_remaining")).concat(" tickets available"));
-            OrgEventCardTicketFare.setText(Integer.toString(queryresult.getInt("ticket_fare")).concat(" /ticket"));
+
+            cardController.setOrgEventCardData(queryResultModel2);
+
+            OrgDashboardVbox.getChildren().add(cardBox);
         }
 
     }
@@ -92,7 +117,7 @@ public class OrgDashboard2 {
                     fxmlLoader.setLocation(getClass().getResource("models/OrgEventCard.fxml"));
                     VBox cardBox = fxmlLoader.load();
                     OrgEventCardController cardController = fxmlLoader.getController();
-                    cardController.setOrgEventCardData(OrganizerEvents.get(i));
+//                    cardController.setOrgEventCardData(OrganizerEvents.get(i));
                 }
             } catch (Exception e) {
                 throw new RuntimeException(e);

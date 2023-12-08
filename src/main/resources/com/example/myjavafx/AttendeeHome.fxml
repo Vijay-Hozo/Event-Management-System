@@ -1,41 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Hyperlink?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1070.0" style="-fx-background-color: #27005D;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.AttendeeHome">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1070.0" style="-fx-background-color: #27005D;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.HomePage_Attendee">
     <children>
-        <Text fill="#e4f1ff" layoutX="131.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover">
-            <font>
-                <Font name="Poppins ExtraBold" size="40.0" />
-            </font>
-        </Text>
         <Pane prefHeight="92.0" prefWidth="1070.0" style="-fx-background-color: #9400FF;" AnchorPane.bottomAnchor="624.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <Text fill="#e4f1ff" layoutX="219.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Past Events">
-                    <font>
-                        <Font name="Poppins Regular" size="24.0" />
-                    </font></Text>
-                <Text fill="#e4f1ff" layoutX="407.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Events">
-                    <font>
-                        <Font name="Poppins Regular" size="24.0" />
-                    </font>
-                </Text>
-                <Text fill="#e4f1ff" layoutX="545.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upcoming events">
-                    <font>
-                        <Font name="Poppins Regular" size="24.0" />
-                    </font>
-                </Text>
-                <Hyperlink layoutX="101.0" layoutY="39.0" text="P" />
-            <Text fill="#e4f1ff" layoutX="860.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello,">
+            <Text fill="#e4f1ff" layoutX="814.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello       ,">
                <font>
-                  <Font name="Poppins Regular" size="24.0" />
+                  <Font name="Poppins SemiBold" size="24.0" />
                </font>
             </Text>
             <Label fx:id="AttendeeHomeName" layoutX="928.0" layoutY="35.0" text="Name" textFill="WHITE">
@@ -43,103 +29,61 @@
                   <Font name="Poppins SemiBold" size="23.0" />
                </font>
             </Label>
-            </children>
-        </Pane>
-        <Pane layoutX="117.0" layoutY="219.0" prefHeight="210.0" prefWidth="400.0" style="-fx-background-color: #AED2FF; -fx-background-radius: 20px;">
-            <children>
-            <ImageView fitHeight="211.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="875.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/event.jpg" />
+                  <Image url="@icons/Hand.png" />
                </image>
             </ImageView>
-                <Pane layoutX="195.0" minHeight="200.0" minWidth="200.0" prefHeight="210.0" prefWidth="206.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 20px;">
-                    <children>
-                        <Text fill="#4e4c4c" layoutX="13.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="176.35608673095703">
-                            <font>
-                                <Font name="Poppins Regular" size="14.0" />
-                            </font>
-                        </Text>
-                        <Text layoutX="18.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fare:">
-                            <font>
-                                <Font name="Poppins Regular" size="14.0" />
-                            </font>
-                        </Text>
-                  <Label fx:id="AttendeeHomeEventCardName" layoutX="12.0" layoutY="16.0" text="EventNameText">
-                     <font>
-                        <Font name="Poppins SemiBold" size="14.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="45.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/location.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="AttendeeHomeEventCardVenue" layoutX="67.0" layoutY="184.0" text="Venue">
-                     <font>
-                        <Font name="Poppins Regular" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="AttendeeHomeEventCardFare" layoutX="56.0" layoutY="136.0" text="TicketRate">
-                     <font>
-                        <Font name="Poppins Regular" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="AttendeeHomeEventCardDesc" layoutX="21.0" layoutY="68.0" prefHeight="27.0" prefWidth="151.0" text="Label" textFill="#636060">
-                     <font>
-                        <Font name="Poppins Regular" size="14.0" />
-                     </font>
-                  </Label>
-                    </children>
-                </Pane>
             </children>
         </Pane>
-      <Pane layoutX="550.0" layoutY="217.0" prefHeight="210.0" prefWidth="400.0" style="-fx-background-color: #AED2FF; -fx-background-radius: 20px;">
+        <Text fill="#e4f1ff" layoutX="89.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover">
+            <font>
+                <Font name="Poppins ExtraBold" size="40.0" />
+            </font>
+        </Text>
+      <Line endX="-100.0" endY="503.43341064453125" layoutX="800.0" layoutY="163.0" startX="-100.0" startY="-18.733352661132812">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5405657291412354" green="0.522599995136261" blue="0.7799999713897705" opacity="0.4300000071525574" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5666666626930237" blue="1.0" opacity="0.5167173743247986" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Pane layoutX="701.0" layoutY="89.0" prefHeight="630.0" prefWidth="372.0">
          <children>
-            <ImageView fitHeight="211.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/event.jpg" />
-               </image>
-            </ImageView>
-            <Pane layoutX="195.0" minHeight="200.0" minWidth="200.0" prefHeight="210.0" prefWidth="206.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 20px;">
-               <children>
-                  <Text fill="#4e4c4c" layoutX="13.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="176.35608673095703">
-                     <font>
-                        <Font name="Poppins Regular" size="14.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="18.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fare:">
-                     <font>
-                        <Font name="Poppins Regular" size="14.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="12.0" layoutY="16.0" text="EventNameText">
-                     <font>
-                        <Font name="Poppins SemiBold" size="14.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="45.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@icons/location.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="AttendeeHomeEventCardVenue1" layoutX="67.0" layoutY="184.0" text="Venue">
-                     <font>
-                        <Font name="Poppins Regular" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="AttendeeHomeEventCardFare1" layoutX="56.0" layoutY="136.0" text="TicketRate">
-                     <font>
-                        <Font name="Poppins Regular" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="AttendeeHomeEventCardDesc1" layoutX="21.0" layoutY="68.0" prefHeight="27.0" prefWidth="151.0" text="Label" textFill="#636060">
-                     <font>
-                        <Font name="Poppins Regular" size="14.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
+            <Text fill="#e4f1ff" layoutX="70.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Events">
+               <font>
+                  <Font name="Poppins SemiBold" size="35.0" />
+               </font>
+            </Text>
+            <ScrollPane layoutX="2.0" layoutY="132.0" prefHeight="497.0" prefWidth="365.0" styleClass="transparent" stylesheets="@styles.css">
+               <content>
+                  <VBox fx:id="AttendeeHomeYourEventsVbox" prefHeight="708.0" prefWidth="346.0" spacing="15.0" style="-fx-background-color: #27005D;" stylesheets="@styles.css">
+                     <padding>
+                        <Insets left="35.0" />
+                     </padding></VBox>
+               </content>
+            </ScrollPane>
          </children>
       </Pane>
+      <ScrollPane layoutX="-3.0" layoutY="209.0" prefHeight="503.0" prefWidth="698.0" styleClass="transparent" stylesheets="@styles.css">
+         <content>
+            <VBox fx:id="AttendeeHomeEventsVbox" prefHeight="1122.0" prefWidth="682.0" spacing="25.0" style="-fx-background-color: #27005D;">
+               <padding>
+                  <Insets left="80.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
     </children>
 </AnchorPane>

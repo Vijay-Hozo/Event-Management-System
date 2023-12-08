@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.82" prefHeight="179.0" prefWidth="233.0" style="-fx-background-color: #9400FF; -fx-background-radius: 25;" styleClass="shadow" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.AttendeeYourEventsCardController">
+   <children>
+      <Label fx:id="AttendeeYourEventCardName" layoutX="36.0" layoutY="18.0" text="EventNameText" textFill="WHITE">
+         <font>
+            <Font name="Poppins SemiBold" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="25.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="176.35608673095703">
+         <font>
+            <Font name="Poppins Regular" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="69.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/location.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="AttendeeYourEventCardVenue" layoutX="91.0" layoutY="150.0" text="Venue" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="AttendeeYourEventCardDesc" layoutX="43.0" layoutY="97.0" prefHeight="27.0" prefWidth="151.0" text="Label" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

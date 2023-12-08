@@ -62,7 +62,10 @@
       </Label>
       <ScrollPane layoutX="354.0" layoutY="147.0" prefHeight="566.0" prefWidth="756.0" styleClass="transparent" stylesheets="@styles.css">
          <content>
-            <VBox fx:id="OrgDashboardVbox" prefHeight="816.0" prefWidth="740.0" styleClass="primary" stylesheets="@styles.css" />
+            <VBox fx:id="OrgDashboardVbox" prefHeight="1866.0" prefWidth="740.0" spacing="20.0" styleClass="primary" stylesheets="@styles.css">
+               <padding>
+                  <Insets left="30.0" />
+               </padding></VBox>
          </content>
       </ScrollPane>
    </children>

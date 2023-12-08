@@ -126,13 +126,11 @@ public class LoginController {
         String OrgId = OrganizerId.getText();
 
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("OrgDashboard.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("OrgDashboard2.fxml"));
         root = loader.load();
 
-        OrgDashboard OrgDashboardController = loader.getController();
+        OrgDashboard2 OrgDashboardController = loader.getController();
         OrgDashboardController.setName(Name);
-
-        OrgEventCardLoader loadData = new OrgEventCardLoader();
 
         OrgDashboardController.LoadEventsOrg(OrgId);
 
@@ -152,10 +150,11 @@ public class LoginController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AttendeeHome.fxml"));
         root = loader.load();
 
-        AttendeeHome AttendeeHomeController = loader.getController();
+        HomePage_Attendee AttendeeHomeController = loader.getController();
 
         AttendeeHomeController.setAttendeeHomeName(username);
         AttendeeHomeController.LoadEventsAttendee();
+        AttendeeHomeController.LoadYourEventsAttendee();
 
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);

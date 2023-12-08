@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="550.0" style="-fx-background-color: #9400FF;" styleClass="shadow" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.OrgDashboard2">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="550.0" style="-fx-background-color: #9400FF;" styleClass="shadow" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.OrgEventCardController">
    <children>
       <ImageView fitHeight="227.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true">
          <image>
