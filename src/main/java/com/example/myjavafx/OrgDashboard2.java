@@ -72,7 +72,9 @@ public class OrgDashboard2 {
             String EventNoofAttendees = Integer.toString(queryresult.getInt("no_of_attendees")).concat(" Attending");
             String EventTicketAvail = Integer.toString(queryresult.getInt("tickets_remaining")).concat(" tickets available");
             String EventTicketFare = Integer.toString(queryresult.getInt("ticket_fare")).concat(" /ticket");
+            String EventId = queryresult.getString("eventId");
 
+            queryResultModel2.put("EventId",EventId);
             queryResultModel2.put("EventName",EventName);
             queryResultModel2.put("EventVenue",EventVenue);
             queryResultModel2.put("EventNoofAttendees",EventNoofAttendees);

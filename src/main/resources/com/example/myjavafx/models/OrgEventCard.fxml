@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="550.0" style="-fx-background-color: #9400FF;" styleClass="shadow" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.OrgEventCardController">
    <children>
       <ImageView fitHeight="227.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true">
@@ -42,7 +41,7 @@
                   <Font name="Poppins SemiBold" size="20.0" />
                </font>
             </Label>
-            <ImageView fx:id="OrgEventCardEditButton" fitHeight="28.0" fitWidth="28.0" layoutX="286.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="OrgEventCardEditButton" fitHeight="28.0" fitWidth="28.0" layoutX="286.0" layoutY="8.0" onMouseClicked="#handleEditButton" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../icons/pencil.png" />
                </image>
@@ -57,6 +56,7 @@
                   <Image url="@../icons/rupees.png" />
                </image>
             </ImageView>
+            <Label fx:id="OrgEventCardEventId" layoutX="17.0" layoutY="71.0" text="Label" />
          </children>
       </Pane>
    </children>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="716.0" prefWidth="1070.0" style="-fx-background-color: #2E0A4A;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavafx.OrgEditEvent">
+    <padding>
+        <Insets left="15.0" right="15.0" top="5.0" />
+    </padding>
+    <children>
+        <Pane layoutX="-26.0" layoutY="-0.7999999999999998" prefHeight="722.0" prefWidth="378.0" style="-fx-background-color: #9400FF; -fx-background-radius: 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="-6.0">
+            <children>
+                <Hyperlink alignment="CENTER" layoutX="107.0" layoutY="289.0" text="Manage Events" textFill="WHITE">
+                    <font>
+                        <Font name="Poppins SemiBold" size="28.0" />
+                    </font>
+                </Hyperlink>
+                <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="68.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/DashboardIcon.png" />
+                    </image>
+                </ImageView>
+                <Hyperlink alignment="CENTER" layoutX="106.0" layoutY="349.0" text="Create Events" textFill="WHITE">
+                    <font>
+                        <Font name="Poppins SemiBold" size="28.0" />
+                    </font>
+                </Hyperlink>
+                <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="68.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/plusIcon.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="80.0" layoutY="649.0" text="Hello      ,  " textFill="WHITE">
+                    <font>
+                        <Font name="Poppins SemiBold" size="30.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="159.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/Hand.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="CreateEventDashboardName" layoutX="214.0" layoutY="649.0" text="Name" textFill="WHITE">
+                    <font>
+                        <Font name="Poppins SemiBold" size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Label layoutX="584.0" layoutY="51.0" text="Update Events" textFill="WHITE" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font name="Poppins SemiBold" size="43.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="449.0" layoutY="162.0" text="Event Name" textFill="WHITE" AnchorPane.topAnchor="110.0">
+            <font>
+                <Font name="Poppins SemiBold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="EditEventName" layoutX="664.0" layoutY="163.0" prefHeight="38.0" prefWidth="322.0" promptText="Enter Your Eventname" style="-fx-background-color: #fFF;" AnchorPane.topAnchor="110.0">
+            <font>
+                <Font name="Poppins Light" size="12.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.08" height="18.66" radius="7.0725" width="11.63">
+                    <color>
+                        <Color opacity="0.8085106015205383" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <Label alignment="CENTER" layoutX="449.0" layoutY="227.0" text="Description" textFill="WHITE" AnchorPane.topAnchor="170.0">
+            <font>
+                <Font name="Poppins SemiBold" size="24.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="EditEventDescription" layoutX="664.0" layoutY="227.0" prefHeight="70.0" prefWidth="322.0" promptText="Enter Event Description" AnchorPane.topAnchor="170.0" />
+        <Label alignment="CENTER" layoutX="449.0" layoutY="324.0" text="Guest" textFill="WHITE" AnchorPane.topAnchor="270.0">
+            <font>
+                <Font name="Poppins SemiBold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="EditguestName" layoutX="664.0" layoutY="324.0" prefHeight="38.0" prefWidth="322.0" promptText="Enter Event's Guest Name" style="-fx-background-color: #fFF;" AnchorPane.topAnchor="270.0">
+            <font>
+                <Font name="Poppins Light" size="12.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.08" height="18.66" radius="7.0725" width="11.63">
+                    <color>
+                        <Color opacity="0.8085106015205383" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <Label alignment="CENTER" layoutX="456.0" layoutY="579.0" text="Date" textFill="WHITE" AnchorPane.topAnchor="590.0">
+            <font>
+                <Font name="Poppins SemiBold" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="455.0" layoutY="643.0" text="Venue" textFill="WHITE" AnchorPane.topAnchor="530.0">
+            <font>
+                <Font name="Poppins SemiBold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="EditEventVenue" layoutX="664.0" layoutY="643.0" prefHeight="38.0" prefWidth="151.0" promptText="Enter Event's Venue" style="-fx-background-color: #fFF;" AnchorPane.topAnchor="530.0">
+            <font>
+                <Font name="Poppins Light" size="12.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.08" height="18.66" radius="7.0725" width="11.63">
+                    <color>
+                        <Color opacity="0.8085106015205383" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <Label alignment="CENTER" layoutX="449.0" layoutY="388.0" text="Organizer Name" textFill="WHITE" AnchorPane.topAnchor="330.0">
+            <font>
+                <Font name="Poppins SemiBold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="EditOrganizerName" layoutX="664.0" layoutY="388.0" prefHeight="38.0" prefWidth="322.0" promptText="Enter Event's Organizer Name" style="-fx-background-color: #fFF;" AnchorPane.topAnchor="330.0">
+            <font>
+                <Font name="Poppins Light" size="12.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.08" height="18.66" radius="7.0725" width="11.63">
+                    <color>
+                        <Color opacity="0.8085106015205383" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <Label alignment="CENTER" layoutX="449.0" layoutY="515.0" text="Mobile Number" textFill="WHITE" AnchorPane.topAnchor="470.0">
+            <font>
+                <Font name="Poppins SemiBold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="EditMobileNumber" layoutX="664.0" layoutY="515.0" prefHeight="38.0" prefWidth="322.0" promptText="Enter Organizer's Mobile Number" style="-fx-background-color: #fFF;" AnchorPane.topAnchor="470.0">
+            <font>
+                <Font name="Poppins Light" size="12.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.08" height="18.66" radius="7.0725" width="11.63">
+                    <color>
+                        <Color opacity="0.8085106015205383" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <Label alignment="CENTER" layoutX="449.0" layoutY="452.0" text="Organizer Id" textFill="WHITE" AnchorPane.topAnchor="400.0">
+            <font>
+                <Font name="Poppins SemiBold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="EditOrganizerId" layoutX="664.0" layoutY="452.0" prefHeight="38.0" prefWidth="322.0" promptText="Enter Organizer's Id" style="-fx-background-color: #fFF;" AnchorPane.topAnchor="400.0">
+            <font>
+                <Font name="Poppins Light" size="12.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+            </padding>
+            <effect>
+                <InnerShadow choke="0.08" height="18.66" radius="7.0725" width="11.63">
+                    <color>
+                        <Color opacity="0.8085106015205383" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <Button fx:id="DeleteEventButton" alignment="CENTER" layoutX="724.0" layoutY="649.5999999999999" mnemonicParsing="false" onMouseClicked="#DeleteEvent" prefHeight="53.0" prefWidth="176.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="Delete Event" textAlignment="CENTER" textFill="#1e1e1e" AnchorPane.bottomAnchor="18.0" AnchorPane.topAnchor="645.0">
+            <font>
+                <Font name="Poppins Bold" size="14.0" />
+            </font>
+            <effect>
+                <DropShadow height="2.28" radius="1.81" width="6.96">
+                    <color>
+                        <Color opacity="0.38905778527259827" />
+                    </color>
+                </DropShadow>
+            </effect>
+            <padding>
+                <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+            </padding>
+        </Button>
+        <DatePicker fx:id="EditDatePick" layoutX="662.8000000000001" layoutY="598.1999999999999" prefHeight="29.0" prefWidth="195.0" />
+      <Button fx:id="UpdateEventButton" alignment="CENTER" layoutX="518.0" layoutY="659.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" style="-fx-background-radius: 20px; -fx-background-color: #AED2FF;" text="Update Event" textAlignment="CENTER" textFill="#1e1e1e" AnchorPane.topAnchor="645.0">
+         <font>
+            <Font name="Poppins Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow height="2.28" radius="1.81" width="6.96">
+               <color>
+                  <Color opacity="0.38905778527259827" />
+               </color>
+            </DropShadow>
+         </effect>
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+         </padding>
+      </Button>
+    </children>
+</AnchorPane>

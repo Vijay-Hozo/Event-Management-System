@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.util.Date;
+import java.util.Random;
 
 public class OrgAddEvent {
 
@@ -63,7 +64,10 @@ public class OrgAddEvent {
             DBConnection connect = new DBConnection();
             Connection connection = connect.getConnection();
 
-            String insertQuery = "insert into events(eventId,event_name,event_description,venue,event_date,created_at,org_mob_number,guest,ticket_fare,org_id,org_name,no_of_attendees,total_tickets,tickets_remaining) values(0002,'Trishul 2K23','A event about Reactiverse','MIT Madras','2023-02-08','2023-01-10 10:39:37',9985451258,'Vijay',800,'G001','gokul',0,400,100)";
+            Random rand = new Random();
+            int x = rand.nextInt(100000);
+
+            String insertQuery = "insert into events(eventId,event_name,event_description,venue,event_date,created_at,org_mob_number,guest,ticket_fare,org_id,org_name,no_of_attendees,total_tickets,tickets_remaining) values("+x+",'"+EventName.getText()+"','"+EventDescription.getText()+"','"+EventVenue.getText()+"','"+DatePick.getValue()+"','2023-01-10 10:39:37','"+Integer.valueOf(MobileNumber.getText())+"','"+GuestName.getText()+"',800,'"+OrganizerId.getText()+"','"+OrganizerName.getText()+"',0,400,100)";
 
             try {
                 Statement statement = connection.createStatement();
