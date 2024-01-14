@@ -98,8 +98,7 @@ public class HomePage_Attendee {
             AttendeeYourEventsCardController YourCardController = fxmlLoader.getController();
             YourCardController.setAttEventCardDetails(queryResultModel2);
             AttendeeHomeYourEventsVbox.getChildren().add(YourCardBox);
-
-            break;
+            
         }
     }
 }

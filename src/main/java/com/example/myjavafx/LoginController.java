@@ -36,7 +36,7 @@ public class LoginController {
     protected TextField OrganizerPassword;
     @FXML
     protected void HandleOrgLoginButton(MouseEvent e) {
-        if(OrganizerUsername.getText().isBlank() == false && OrganizerUsername.getText().isBlank() == false && OrganizerId.getText().isBlank()==false){
+        if(OrganizerUsername.getText().isBlank() == false && OrganizerPassword.getText().isBlank() == false && OrganizerId.getText().isBlank()==false){
             validateOrganizerLogin(e);
         }
     }
