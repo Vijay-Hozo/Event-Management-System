@@ -13,7 +13,7 @@ The system caters to distinct user roles – Organizers and Attendees. Organizer
 - Organizer can create and schedule an event.
 - Organizer can update or edit event information.
 - Organizers can use the system to scan tickets and facilitate event check-ins.
-- Organizers can manage attendee information for effective event coordination
+- Organizers can manage attendee information for effective event coordination.
 
 **The features that are available to the Attendees are :**
 
